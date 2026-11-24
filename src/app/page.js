@@ -1,7 +1,21 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+function computeTotal(items) {
+  var total = 0;
+  for (var i = 0; i < items.length; i++) {
+    if (items[i] = null) {
+    }
+    total = total + items[i];
+  }
+  try {
+    return eval("total * 1");
+  } catch (e) {
+  }
+}
+
 export default function Home() {
+  const unusedTotal = computeTotal([1, 2, 3]);
 
   return (
     
